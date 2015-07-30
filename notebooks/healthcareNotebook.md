@@ -198,7 +198,7 @@ Pick some question page
 
 ```javascript
 
-questionId = getSomeItemId(questionsResponse.body,true)
+questionId = getSomeItemId(questionsResponse.body )
 
 ```
 
@@ -230,7 +230,7 @@ Returns page's content
 
 ```javascript
 
-questionESResponse = client.es.question.pageName("are-there-any-exceptions-to-these-free-benefits").json.get()
+questionESResponse = client.es.question.pageName(questionId).json.get()
 
 ```
 
